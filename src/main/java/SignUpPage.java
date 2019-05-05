@@ -27,8 +27,8 @@ public class SignUpPage {
     private String sexRadioButton = "//*[@id=\"li-gender\"]/label[normalize-space()='%s']";
     private By shareCheckbox = By.xpath("//*[@id=\"register-thirdparty\"]");
     private By registerButton = By.xpath("//*[@id=\"register-button-email-submit\"]");
-    private By errorLabel = By.xpath("//label[@class='has-error' and string-length(text())>0]");
-    private String errorByText = "//label[@class='has-error' and text()='%s']";
+    private By errorLabel = By.xpath("//label[@class=\"has-error\" and string-length(text())>0]");
+    private String errorByText = "//label[@class=\"has-error\" and text()=\"%s\"]";
 
     public SignUpPage typeEmail(String email) {
         driver.findElement(emailField).sendKeys(email);
